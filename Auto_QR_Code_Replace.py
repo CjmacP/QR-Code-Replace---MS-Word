@@ -9,6 +9,8 @@ def qr_code_maker(url):
     
 def replace_QR(new_url_location):
     
+    # Template QR code is inserted inside the first row, first cell of table 1
+        
     runs = doc2.tables[1].rows[0].cells[0].paragraphs[0].runs[0]
 
     doc2.tables[1].rows[0].cells[0]._element.clear_content()
